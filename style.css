@@ -1,0 +1,34 @@
+body{
+	background-color: #ffe680;
+}
+h1{
+	color: #008000;
+}
+
+.form_div{
+	color: orangered;
+	position: relative;
+	top: 120px;
+	left: 10px;
+	width: 420  px;
+	height: auto;
+	padding: 10px;
+	margin:30px;
+	background-color: #004d80;
+
+}
+#first_name_text{
+	color: white;
+}
+#last_name_text{
+	color: white;
+}
+#email_text{
+	color: white;
+}
+#submit_text{
+	color: white;
+}
+#phone_text{
+	color: white;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Board game update</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		
+	</head>
+	<body>
+	<div class="container-fluid">
+	<h1 class="text-center">Board Game Aficionados Board Game CRUD</h1>
+		
+		<div class="form_div">	
+		<p>Please fill in the below form to be add your game to the database</p>
+			<form method="post" action= "TMA4_Q3c_BoardGame_CRUD_3014440.php" id= "inputFormBgame" >
+				<table class="text-center" >
+				<tr><td id="board_game_name"> Game Name:</td><td>
+					<input type="text" name="first_name" required ="required" autofocus placeholder="Board game name" pattern="^[A-Za-z ]+$" title ="Enter the name of your board game"/>
+					</tr>
+				
+				<tr><td id="Max_players"> Maximum numbers of players:</td><td> 
+					<input type="text" name="Maxi_players" required ="required" placeholder="Maximum number of players" pattern="^[0-9 ]+$" title ="Enter the maximum amount of players the game can take"/>
+					</td></tr>
+				<tr><td id="Owner_of_game"> Owner of the game: </td> <td>
+					<input type="text" name="Owner_game" required ="required" placeholder="Your memberID" pattern="^[0-9 ]+$">
+				</td></tr>
+				<tr><td id="submit_text">
+				Submit:</td><td> <input type="submit" value="Submit">
+				</td></tr>
+				</table>	
+			</form>
+		</div>
+	<div class="form_div">	
+		<p>Please fill in the below form to search for a game</p>
+			<form method="post" action= "#" id= "searchFormBgame" >
+				<table>
+				<tr><td id="board_game_name"> Game Name:</td><td>
+					<input type="text" name="searchBgameName" required ="required" placeholder="Game name" pattern="^[A-Za-z ]+$" title ="Enter the name of your board game"/>
+					</tr>
+				
+				<tr><td id="Max_players"> Maximum numbers of players:</td><td> 
+					<input type="text" name="Maxi_players" placeholder="Your Last Name" pattern="^[0-9 ]+$" title ="Enter the maximum amount of players the game can take"/>
+					</td></tr>
+				<tr><td id="Owner_of_game"> Owner of the game: </td> <td>
+					<input type="text" name="email_input" placeholder="Your memberID" pattern="^[0-9 ]+$">
+				</td></tr>
+				<tr><td id="search_text">
+				Search: </td><td> <input type="submit" value="Search">
+				</td></tr>
+				</table>	
+			</form>
+		</div>
+		<div class="form_div">
+			<p>Please delete a record, Only available if you have the gameID</p>
+			<form method="post" action= "#" id= "DeleteFormBgame" >
+				<table>
+					<tr><td id="boardGameDeleteID"> Board Game ID</td><td>
+						<input type="text" name="deleteBgamerecord" required ="required" placeholder="delete game" pattern="^[A-Za-z ]+$" title ="Enter the ID Key of your game for deletion"/>
+					</tr>
+
+					<tr><td id="delete_game">
+						DELETE RECORD </td><td> <input type="submit" value="DELETE">
+					</td></tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	</body>
+</html>
